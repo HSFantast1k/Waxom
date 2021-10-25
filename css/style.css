@@ -24,7 +24,7 @@ body {
 }
 
 .container {
-    max-width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -466,8 +466,7 @@ body {
 .mobile__img {
     display: block;
 }
-.mobile__content {
-}
+
 .mobile__content-title {
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
@@ -478,8 +477,7 @@ body {
     width: 657px;
     margin: 45px 0;
 }
-.mobile__content-list {
-}
+
 .mobile__list-item {
     position: relative;
     margin-left: 100px;
@@ -540,4 +538,97 @@ body {
     height: 2px;
     background-color: #fff;
     bottom: 0;
+}
+
+.posts {
+    padding: 80px 0;
+}
+
+.posts__inner {
+    text-align: center;
+}
+.posts__title {
+    margin-bottom: 30px;
+}
+.posts__text {
+    max-width: 757px;
+    margin: 0 auto 40px;
+}
+
+.posts__slider {
+    padding-bottom: 40px;
+}
+
+.posts__slider-item {
+    transition: all .5s;
+    margin: 0 10px;
+    border-radius: 15px;
+}
+
+.posts__slider-img {
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+.posts__slider-decs {
+    text-align: left;
+    padding: 30px 10px 35px 30px;
+}
+
+.posts__slider-title {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    transition: all .5s;
+}
+.posts__slider-text {
+    margin-bottom: 28px;
+    transition: all .5s;
+}
+
+.posts__slider-link {
+    color: #c7b299;
+    font-size: 14px;
+    line-height: 20px;
+    padding-right: 14px;
+    position: relative;
+}
+.posts__slider-link::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 5px;
+    height: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-image: url('../images/link-arrow.svg');
+}  
+
+.posts__slider-item:hover{
+    background-color: #362f2d;
+}
+
+
+.posts__slider-item:hover .posts__slider-title{
+    color: #c7b299;
+}
+
+.posts__slider-item:hover .posts__slider-text{
+    color: #fff;
+}
+
+.posts .slick-arrow {
+    position: absolute;
+    bottom: 0;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+
+.slick-prev {
+    margin-left: -20px;
+}
+
+.slick-next {
+    margin-left: 20px;
 }
